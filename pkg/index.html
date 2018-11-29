@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Window or worker origin</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="window_or_worker.js"></script>
+    <script type="text/javascript">
+      wasm_bindgen("window_or_worker_bg.wasm").then(function () {
+        alert(wasm_bindgen.greet());
+        var worker = new Worker("greet_from_worker.js");
+        worker.onmessage = function(msg) {
+          alert("worker: " + msg.data);
+        };
+      });
+    </script>
+  </body>
+</html>

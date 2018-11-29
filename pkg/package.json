@@ -1,0 +1,19 @@
+{
+  "name": "window_or_worker",
+  "collaborators": [
+    "Rafał Michalski <royaltm75@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "license": "UNLICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/royaltm/rust-wasm-bindgen-window-or-worker-playground"
+  },
+  "files": [
+    "window_or_worker_bg.wasm",
+    "window_or_worker.js",
+    "window_or_worker.d.ts"
+  ],
+  "browser": "window_or_worker.js",
+  "types": "window_or_worker.d.ts"
+}
