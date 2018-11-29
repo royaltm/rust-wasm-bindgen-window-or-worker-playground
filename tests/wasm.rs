@@ -1,4 +1,7 @@
-// wasm-pack test --headless --firefox
+/* run with:
+
+       wasm-pack test --headless --firefox
+*/
 extern crate wasm_bindgen_test;
 extern crate wasm_bindgen;
 extern crate web_sys;
@@ -15,7 +18,7 @@ use web_sys::*;
 #[wasm_bindgen_test]
 fn try_dyn_into_fails_hard() {
     /*
-        this aborts badly with;
+        this aborts with:
 
 ---- wasm::try_dyn_into_fails_hard output ----
     JS exception that was thrown:

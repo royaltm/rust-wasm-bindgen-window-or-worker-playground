@@ -29,7 +29,7 @@ impl WindowOrWorkerGlobalScope for WorkerGlobalScope {
 }
 
 //
-// Does not compile:
+// Can't use impl WindowOrWorkerGlobalScope as return type:
 //
 // fn self_() -> Result<impl WindowOrWorkerGlobalScope, JsValue> {
 //     let global = js_sys::global();
