@@ -3,7 +3,7 @@ name = "window_or_worker"
 version = "0.1.0"
 authors = ["Rafał Michalski <royaltm75@gmail.com>"]
 license = "UNLICENSE"
-repository = "https://github.com/royaltm/rust-wasm-bindgen-window-or-worker-playground"
+repository = "https://github.com/royaltm/rust-wasm-bindgen-window-or-worker-playground.git"
 publish = false
 
 [lib]
